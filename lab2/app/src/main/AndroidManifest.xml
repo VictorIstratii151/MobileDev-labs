@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.vic.lab2">
 
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,8 +20,20 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".AddActivity"
-                  android:screenOrientation="portrait">
+        <activity
+            android:name=".AddActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service android:name=".NotificationService"/>
+
+        <receiver android:name=".AlarmReceiver"/>
+
+        <activity android:name=".NotificationActivity">
+        </activity>
+        <activity android:name=".RemoveUpdateActivity">
+        </activity>
+        <activity android:name=".ModifyEntry">
         </activity>
     </application>
 
