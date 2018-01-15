@@ -1,9 +1,6 @@
 package com.example.vic.pamlab5;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -81,7 +78,7 @@ public class NotificationsFragment extends Fragment implements ReturnTitle
                              Bundle savedInstanceState)
     {
         View rootView = inflater.inflate(R.layout.fragment_notifications, container, false);
-        textView = (TextView) rootView.findViewById(R.id.textViewNotifications);
+        textView = (TextView) rootView.findViewById(R.id.textViewAccepted2);
         String title = getArguments().getString(ARG_TITLE, "");
         textView.setText(title);
 

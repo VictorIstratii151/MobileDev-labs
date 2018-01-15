@@ -7,22 +7,204 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <android.support.constraint.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textViewHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Henlo"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-    </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonVeryUrgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/button_3_background"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Very Urgent"
+                android:textColor="@color/text_color_2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="32dp"/>
+
+            <TextView
+                android:id="@+id/textViewRequestName"
+                android:textColor="@color/textColorDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/buttonVeryUrgent"
+                android:layout_marginLeft="32dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewRequestDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Description (Optional)"
+                android:textColor="@color/textColorDark"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextRequestLocation"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewRequestDesease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Desease"
+                android:textColor="@color/textColorDark"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextRequestName"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewRequestLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Location"
+                android:textColor="@color/textColorDark"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextRequestDesease"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextRequestName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edit_text_dark"
+                android:ems="10"
+                android:hint="Your Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/colorEditTextDark"
+                android:textColorHint="@color/colorEditTextDark"
+                android:textSize="@dimen/text_size_normal"
+                android:tint="@color/colorEditTextDark"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewRequestName"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+
+            <EditText
+                android:id="@+id/editTextRequestDesease"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/edit_text_dark"
+                android:ems="10"
+                android:hint="What's your illness"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/colorEditTextDark"
+                android:textColorHint="@color/colorEditTextDark"
+                android:textSize="@dimen/text_size_normal"
+                android:tint="@color/colorEditTextDark"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewRequestDesease"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+
+            <EditText
+                android:id="@+id/editTextRequestLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edit_text_dark"
+                android:ems="10"
+                android:hint="Your location"
+                android:inputType="textPostalAddress"
+                android:padding="10dp"
+                android:textColor="@color/colorEditTextDark"
+                android:textColorHint="@color/colorEditTextDark"
+                android:textSize="@dimen/text_size_normal"
+                android:tint="@color/colorEditTextDark"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewRequestLocation"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+
+            <EditText
+                android:id="@+id/editTextRequestDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edit_text_dark"
+                android:ems="10"
+                android:hint="Describe here"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/colorEditTextDark"
+                android:textColorHint="@color/colorEditTextDark"
+                android:textSize="@dimen/text_size_normal"
+                android:tint="@color/colorEditTextDark"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewRequestDescription"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+
+            <Button
+                android:id="@+id/buttonRequest"
+                style="@style/NoCapsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="48dp"
+                android:text="Request"
+                android:background="@color/button_2_background"
+                android:textColor="@color/text_color_1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextRequestDescription"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintVertical_bias="0.0"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
 </FrameLayout>

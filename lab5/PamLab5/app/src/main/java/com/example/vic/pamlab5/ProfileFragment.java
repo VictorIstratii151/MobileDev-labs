@@ -1,12 +1,14 @@
 package com.example.vic.pamlab5;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 //
@@ -84,6 +86,16 @@ public class ProfileFragment extends Fragment implements ReturnTitle
 
         String title = getArguments().getString(ARG_TITLE, "");
         textView.setText(title);
+
+        Button btn = (Button) rootView.findViewById(R.id.buttonListDoctors);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent listIntent = new Intent(getActivity(), DoctorList.class);
+                startActivity(listIntent);
+            }
+        });
 
         return rootView;
 
