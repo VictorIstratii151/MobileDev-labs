@@ -1,5 +1,8 @@
 package com.example.vic.pamlab5;
 
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,11 +19,13 @@ import java.util.List;
 
 public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.DocViewHolder>
 {
-    List<DoctorModel> doctors;
+    private static List<DoctorModel> doctors;
+    private static Context mContext;
 
-    public DoctorAdapter(List<DoctorModel> doctors)
+    public DoctorAdapter(List<DoctorModel> doctors, Context context)
     {
         this.doctors = doctors;
+        this.mContext = context;
     }
 
     public static class DocViewHolder extends RecyclerView.ViewHolder
@@ -39,7 +44,32 @@ public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.DocViewHol
             docSpec = (TextView) itemView.findViewById(R.id.doc_spec);
             docLoc = (TextView) itemView.findViewById(R.id.doc_loc);
             docPic = (ImageView) itemView.findViewById(R.id.doc_pic);
+
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v)
+                {
+                    int position = getAdapterPosition();
+                    if (position != RecyclerView.NO_POSITION)
+                    {
+                        DoctorModel doc = doctors.get(position);
+                        Intent detailsIntent = new Intent(mContext, DoctorDetails.class);
+                        detailsIntent.putExtra("name", doc.getName());
+                        detailsIntent.putExtra("speciality", doc.getSpeciality());
+                        detailsIntent.putExtra("address", doc.getAddress());
+                        detailsIntent.putExtra("description", doc.getAbout());
+
+                        mContext.startActivity(detailsIntent);
+                    }
+                }
+            });
         }
+    }
+
+    private Context getContext()
+    {
+        return mContext;
     }
 
     @Override

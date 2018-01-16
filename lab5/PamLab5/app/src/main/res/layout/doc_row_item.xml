@@ -27,8 +27,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/doc_pic"
+                android:paddingLeft="10dp"
                 android:textColor="@color/textColorDark"
-                android:textSize="@dimen/text_size_normal"/>
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/doc_spec"
@@ -36,16 +39,19 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/doc_name"
                 android:layout_toRightOf="@+id/doc_pic"
-                android:textColor="@color/textColorDark"
-                android:textSize="@dimen/text_size_normal"/>
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorStandardGreen"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="italic"/>
 
             <TextView
                 android:id="@+id/doc_loc"
+                android:paddingLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/doc_spec"
                 android:layout_toRightOf="@+id/doc_pic"
-                android:textColor="@color/textColorDark"
+                android:textColor="@color/textColorLight"
                 android:textSize="@dimen/text_size_normal"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>

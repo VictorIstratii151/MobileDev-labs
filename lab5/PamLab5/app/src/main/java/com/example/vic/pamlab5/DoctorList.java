@@ -28,7 +28,7 @@ public class DoctorList extends AppCompatActivity
         doctors.add(new DoctorModel(1, "Vasea", "Endocrinolog", "ciocana", "loh", 1.2f, "sas"));
         doctors.add(new DoctorModel(2, "Jojo", "Proctolog", "rishkanovka", "loh", 1.2f, "sas"));
         doctors.add(new DoctorModel(3, "Dio", "Venerolog", "demasia", "loh", 1.2f, "sas"));
-        DoctorAdapter adapter = new DoctorAdapter(doctors);
+        DoctorAdapter adapter = new DoctorAdapter(doctors, this);
 
         recyclerView.setAdapter(adapter);
     }
