@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vic.pamlab6.SignUp">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:textColor="@color/textColorDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Email"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextBirthday"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                android:textColor="@color/textColorDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Location/Address"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_dark"
+                android:tint="@color/colorEditTextDark"
+                android:textColorHint="@color/colorEditTextDark"
+                android:textColor="@color/colorEditTextDark"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Your Phone Number"
+                android:inputType="phone"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPhone"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+
+            <EditText
+                android:id="@+id/editTextRequestDesease"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_dark"
+                android:tint="@color/colorEditTextDark"
+                android:textColorHint="@color/colorEditTextDark"
+                android:textColor="@color/colorEditTextDark"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Your Location"
+                android:inputType="textPostalAddress"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLocation"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_dark"
+                android:tint="@color/colorEditTextDark"
+                android:textColorHint="@color/colorEditTextDark"
+                android:textColor="@color/colorEditTextDark"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Your Full Name"
+                android:inputType="textPersonName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_dark"
+                android:tint="@color/colorEditTextDark"
+                android:textColorHint="@color/colorEditTextDark"
+                android:textColor="@color/colorEditTextDark"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Your Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEmail"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+
+            <TextView
+                android:id="@+id/textViewBirthday"
+                android:textColor="@color/textColorDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Birthday"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextFullName"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/editTextBirthday"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_dark"
+                android:tint="@color/colorEditTextDark"
+                android:textColorHint="@color/colorEditTextDark"
+                android:textColor="@color/colorEditTextDark"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_height="40dp"
+                android:layout_width="0dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="dd/mm/yy"
+                android:inputType="date"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBirthday"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:textColor="@color/textColorDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="Full Name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout"/>
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:textColor="@color/textColorDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Phone Number"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/relativeLayout">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/textColorLight"
+                    android:text="Add Photo"/>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_person_outline_gray_100dp"/>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/profile_circle"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonRegister"
+                style="@style/NoCapsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/button_2_background"
+                android:text="Register"
+                android:textColor="@color/text_color_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextRequestDesease"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

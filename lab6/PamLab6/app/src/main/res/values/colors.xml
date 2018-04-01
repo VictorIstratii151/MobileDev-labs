@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00e36a</color>
+    <color name="colorPrimaryDark">#09794c</color>
+    <color name="colorAccent">#6aff00</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorPressedWhite">#fff</color>
+    <color name="colorStandardGreen">#1de9b6</color>
+    <color name="colorFocusedGreen">#64ffda</color>
+    <color name="colorFocusedWhite">#e0f2f1</color>
+    <color name="colorPressedYellow">#dce775</color>
+    <color name="colorEditTextLight">#f1f8e9</color>
+    <color name="colorEditTextDark">#78909c</color>
+    <color name="textColorLight">#90a4ae</color>
+    <color name="textColorDark">#263238</color>
+</resources>

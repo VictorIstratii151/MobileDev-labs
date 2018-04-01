@@ -59,16 +59,6 @@ public class BottomNavigation extends AppCompatActivity
                 .commit();
     }
 
-//    private Fragment buildFragment(String title)
-//    {
-//        Fragment fragment = new Fragment();
-//        Bundle bundle = new Bundle();
-//        bundle.putString(fragment.ARG_TITLE, title);
-//        fragment.setArguments(bundle);
-//
-//        return fragment;
-//    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
